@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="png" href="../icone/asPelé.png">
+	<title>Cadastro</title>
+</head>
+<body>
+
+	<a href="../index.html" target="_blank" accesskey="i">| Página inicial (I) |</a>
+	<a href="../biografia/biografia.html" target="_blank" accesskey="b">| Biografia (B) |</a>
+	<a href="../titulos/titulos.html" target="_blank" accesskey="t">| Títulos (T) |</a>
+
+	<br><br>
+
+	<h1>Cadastre-se em nosso site!</h1>
+
+	<form action="http://www.profasimone.com.br/cadastro.php" method="post">
+		<label for="nome">Nome:</label><br>
+		<input type="text" name="nome" id="nome" size="50" minlength="2" maxlength="40" placeholder="digite seu nome..." required>
+
+		<br><br>
+
+		<label  for="Idade">Idade (você deve ter pelo menos 12 anos para se cadastrar):</label><br>
+		<input type="number" name="Idade" id="Idade" size="3" placeholder="Idade" min="12">
+
+		<br><br>
+
+		<label  for="senha">Senha:</label><br>
+		<input type="password" name="senha" id="senha" placeholder="digite a senha..." required>
+
+		<br><br>
+
+		E-mail:<br>
+		<input type="email" name="email" placeholder="digite o seu e-mail...">
+
+		<br><br>
+
+		Time favorito:<br>
+		<select name="time" size="3" required>
+			<option value="Palmeiras">Palmeiras</option>
+			<option value="São Paulo">São Paulo</option>
+			<option value="Santos">Santos</option>
+		</select>
+
+		<br><br>
+
+		Observações:<br>		
+		<textarea rows="10" name="observacoes" cols="50"></textarea>
+
+		<br><br>
+
+		<input type="reset" name="limpar" value="Limpar">
+
+		<br><br>
+
+		<input type="submit" name="Enviar">
+	</form>
+
+</body>
+</html>
